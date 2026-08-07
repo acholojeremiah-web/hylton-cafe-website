@@ -1,58 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Hylton Café | Breakfast, Brunch & Lunch in Birmingham</title>
 
-    <meta name="description" content="Hylton Café in Birmingham. Enjoy freshly prepared breakfast, brunch, lunch and great coffee at 2 Hylton Street.">
+    <meta
+        name="description"
+        content="Hylton Café in Birmingham. Enjoy freshly prepared breakfast, brunch, lunch and great coffee at 2 Hylton Street."
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- Navigation -->
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
     <header class="navbar">
+
         <div class="container nav-container">
 
-            <a href="#" class="logo">Hylton Café</a>
+            <a href="#home" class="logo">
+                Hylton Café
+            </a>
 
-            <nav>
+
+            <nav
+                class="main-nav"
+                id="mainNav"
+                aria-label="Main navigation"
+            >
+
                 <a href="#home">Home</a>
+
                 <a href="#menu">Menu</a>
+
                 <a href="#about">About</a>
+
                 <a href="#gallery">Gallery</a>
+
                 <a href="#contact">Contact</a>
+
             </nav>
 
-            <a href="#menu" class="nav-button">View Menu</a>
+
+            <a href="#menu" class="nav-button">
+                View Menu
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNav"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
 
         </div>
+
     </header>
 
 
-    <!-- Hero Section -->
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
     <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
 
         <section id="home" class="hero">
 
             <div class="hero-overlay"></div>
 
+
             <div class="container hero-content">
 
-                <p class="hero-small-text">WELCOME TO HYLTON CAFÉ</p>
-
-                <h1>Fresh Food.<br>Great Coffee.<br>Good Times.</h1>
-
-                <p class="hero-description">
-                    Delicious breakfast, brunch and lunch served in the heart of Birmingham.
+                <p class="hero-small-text">
+                    WELCOME TO HYLTON CAFÉ
                 </p>
 
+
+                <h1>
+                    Fresh Food.<br>
+                    Great Coffee.<br>
+                    Good Times.
+                </h1>
+
+
+                <p class="hero-description">
+                    Delicious breakfast, brunch and lunch served
+                    in the heart of Birmingham.
+                </p>
+
+
                 <div class="hero-buttons">
-                    <a href="#menu" class="primary-button">Explore Our Menu</a>
-                    <a href="#contact" class="secondary-button">Find Us</a>
+
+                    <a
+                        href="#menu"
+                        class="primary-button"
+                    >
+                        Explore Our Menu
+                    </a>
+
+
+                    <a
+                        href="#contact"
+                        class="secondary-button"
+                    >
+                        Find Us
+                    </a>
+
                 </div>
 
             </div>
@@ -60,25 +140,47 @@
         </section>
 
 
-        <!-- Introduction -->
+
+        <!-- =================================================
+             INTRODUCTION
+        ================================================== -->
+
         <section class="intro">
 
             <div class="container intro-container">
 
                 <div>
-                    <p class="section-label">HYLTON CAFÉ</p>
 
-                    <h2>A place for good food and good company.</h2>
-                </div>
-
-                <div>
-                    <p>
-                        From a hearty breakfast to a relaxed lunch and a freshly
-                        brewed coffee, Hylton Café is a welcoming place to enjoy
-                        freshly prepared food in Birmingham.
+                    <p class="section-label">
+                        HYLTON CAFÉ
                     </p>
 
-                    <a href="#about" class="text-link">Discover Our Story →</a>
+
+                    <h2>
+                        A place for good food
+                        and good company.
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+                        From a hearty breakfast to a relaxed
+                        lunch and a freshly brewed coffee,
+                        Hylton Café is a welcoming place to
+                        enjoy freshly prepared food in Birmingham.
+                    </p>
+
+
+                    <a
+                        href="#about"
+                        class="text-link"
+                    >
+                        Discover Our Story →
+                    </a>
+
                 </div>
 
             </div>
@@ -86,36 +188,73 @@
         </section>
 
 
-        <!-- Popular Menu -->
-        <section id="menu" class="menu-section">
+
+        <!-- =================================================
+             MENU
+        ================================================== -->
+
+        <section
+            id="menu"
+            class="menu-section"
+        >
 
             <div class="container">
 
+
                 <div class="section-heading">
 
-                    <p class="section-label">OUR MENU</p>
+                    <p class="section-label">
+                        OUR MENU
+                    </p>
 
-                    <h2>Customer favourites</h2>
+
+                    <h2>
+                        Customer favourites
+                    </h2>
+
 
                     <p>
-                        A selection of dishes perfect for breakfast, brunch and lunch.
+                        A selection of dishes perfect for
+                        breakfast, brunch and lunch.
                     </p>
 
                 </div>
+
 
 
                 <div class="menu-grid">
 
+
+                    <!-- MENU ITEM 1 -->
+
                     <article class="menu-card">
 
-                        <div class="menu-image breakfast-image"></div>
+                        <div class="menu-image">
+
+                            <img
+                                src="full-english-breakfast-2.jpg"
+                                alt="Full English breakfast at Hylton Café"
+                                loading="lazy"
+                            >
+
+                        </div>
+
 
                         <div class="menu-content">
 
-                            <h3>Full English Breakfast</h3>
+                            <span class="menu-category">
+                                BREAKFAST
+                            </span>
+
+
+                            <h3>
+                                Full English Breakfast
+                            </h3>
+
 
                             <p>
-                                A classic hearty breakfast made for a great start to the day.
+                                A hearty British classic prepared
+                                for a satisfying start to your day.
                             </p>
 
                         </div>
@@ -123,16 +262,38 @@
                     </article>
 
 
+
+                    <!-- MENU ITEM 2 -->
+
                     <article class="menu-card">
 
-                        <div class="menu-image eggs-image"></div>
+                        <div class="menu-image">
+
+                            <img
+                                src="coffee-sandwich.jpg"
+                                alt="Brunch dish served at Hylton Café"
+                                loading="lazy"
+                            >
+
+                        </div>
+
 
                         <div class="menu-content">
 
-                            <h3>Eggs Benedict</h3>
+                            <span class="menu-category">
+                                BRUNCH
+                            </span>
+
+
+                            <h3>
+                                Eggs Benedict
+                            </h3>
+
 
                             <p>
-                                A brunch favourite served with perfectly prepared eggs.
+                                A brunch favourite with perfectly
+                                prepared eggs and delicious
+                                accompaniments.
                             </p>
 
                         </div>
@@ -140,16 +301,37 @@
                     </article>
 
 
+
+                    <!-- MENU ITEM 3 -->
+
                     <article class="menu-card">
 
-                        <div class="menu-image salmon-image"></div>
+                        <div class="menu-image">
+
+                            <img
+                                src="latte-glass.jpg"
+                                alt="Coffee and brunch at Hylton Café"
+                                loading="lazy"
+                            >
+
+                        </div>
+
 
                         <div class="menu-content">
 
-                            <h3>Salmon & Scrambled Eggs</h3>
+                            <span class="menu-category">
+                                CAFÉ FAVOURITE
+                            </span>
+
+
+                            <h3>
+                                Salmon & Scrambled Eggs
+                            </h3>
+
 
                             <p>
-                                A delicious combination for a relaxed brunch.
+                                A relaxed brunch combination made
+                                for slow and enjoyable mornings.
                             </p>
 
                         </div>
@@ -157,16 +339,37 @@
                     </article>
 
 
+
+                    <!-- MENU ITEM 4 -->
+
                     <article class="menu-card">
 
-                        <div class="menu-image burger-image"></div>
+                        <div class="menu-image">
+
+                            <img
+                                src="cafe-counter.jpg"
+                                alt="Hylton Café counter"
+                                loading="lazy"
+                            >
+
+                        </div>
+
 
                         <div class="menu-content">
 
-                            <h3>Burgers & Fries</h3>
+                            <span class="menu-category">
+                                LUNCH
+                            </span>
+
+
+                            <h3>
+                                Burgers & Fries
+                            </h3>
+
 
                             <p>
-                                A satisfying lunch option served with crispy fries.
+                                A satisfying lunch option served
+                                with crispy, golden fries.
                             </p>
 
                         </div>
@@ -175,8 +378,17 @@
 
                 </div>
 
+
+
                 <div class="menu-button-container">
-                    <a href="#contact" class="primary-button">Ask About Our Menu</a>
+
+                    <a
+                        href="#contact"
+                        class="primary-button"
+                    >
+                        Ask About Our Menu
+                    </a>
+
                 </div>
 
             </div>
@@ -184,32 +396,64 @@
         </section>
 
 
-        <!-- About -->
-        <section id="about" class="about-section">
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section
+            id="about"
+            class="about-section"
+        >
 
             <div class="container about-container">
 
-                <div class="about-image"></div>
+
+                <div class="about-image">
+
+                    <img
+                        src="Screenshot_20260807-170252.jpg"
+                        alt="Inside Hylton Café with comfortable seating"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
 
                 <div class="about-content">
 
-                    <p class="section-label">ABOUT US</p>
-
-                    <h2>Good food, freshly prepared.</h2>
-
-                    <p>
-                        Hylton Café is a Birmingham café serving breakfast,
-                        brunch, lunch and coffee in a relaxed and welcoming
-                        environment.
+                    <p class="section-label">
+                        ABOUT US
                     </p>
 
+
+                    <h2>
+                        Good food,
+                        freshly prepared.
+                    </h2>
+
+
                     <p>
-                        Whether you're joining us for breakfast, meeting a
-                        friend for coffee or stopping by for lunch, we look
-                        forward to welcoming you.
+                        Hylton Café is a Birmingham café serving
+                        breakfast, brunch, lunch and coffee in a
+                        relaxed and welcoming environment.
                     </p>
 
-                    <a href="#contact" class="text-link">Visit Hylton Café →</a>
+
+                    <p>
+                        Whether you're joining us for breakfast,
+                        meeting a friend for coffee or stopping
+                        by for lunch, we look forward to welcoming you.
+                    </p>
+
+
+                    <a
+                        href="#contact"
+                        class="text-link"
+                    >
+                        Visit Hylton Café →
+                    </a>
 
                 </div>
 
@@ -218,27 +462,112 @@
         </section>
 
 
-        <!-- Gallery -->
-        <section id="gallery" class="gallery-section">
+
+        <!-- =================================================
+             GALLERY
+        ================================================== -->
+
+        <section
+            id="gallery"
+            class="gallery-section"
+        >
 
             <div class="container">
 
+
                 <div class="section-heading">
 
-                    <p class="section-label">GALLERY</p>
+                    <p class="section-label">
+                        GALLERY
+                    </p>
 
-                    <h2>A taste of Hylton Café</h2>
+
+                    <h2>
+                        A taste of Hylton Café
+                    </h2>
+
+
+                    <p>
+                        Step inside, take a seat and enjoy
+                        the Hylton Café experience.
+                    </p>
 
                 </div>
 
+
+
                 <div class="gallery-grid">
 
-                    <div class="gallery-item gallery-one"></div>
-                    <div class="gallery-item gallery-two"></div>
-                    <div class="gallery-item gallery-three"></div>
-                    <div class="gallery-item gallery-four"></div>
-                    <div class="gallery-item gallery-five"></div>
-                    <div class="gallery-item gallery-six"></div>
+
+                    <div class="gallery-item gallery-large">
+
+                        <img
+                            src="Screenshot_20260807-170630.jpg"
+                            alt="Warm interior of Hylton Café"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="cafe-counter.jpg"
+                            alt="Hylton Café counter"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="full-english-breakfast-2.jpg"
+                            alt="Breakfast served at Hylton Café"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="coffee-sandwich.jpg"
+                            alt="Food served at Hylton Café"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="latte-glass.jpg"
+                            alt="Coffee served at Hylton Café"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="Screenshot_20260807-170252.jpg"
+                            alt="Seating area inside Hylton Café"
+                            loading="lazy"
+                        >
+
+                    </div>
 
                 </div>
 
@@ -247,43 +576,115 @@
         </section>
 
 
-        <!-- Contact -->
-        <section id="contact" class="contact-section">
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <section
+            id="contact"
+            class="contact-section"
+        >
 
             <div class="container contact-container">
 
+
                 <div class="contact-content">
 
-                    <p class="section-label">COME VISIT US</p>
+                    <p class="section-label">
+                        COME VISIT US
+                    </p>
 
-                    <h2>We'd love to welcome you.</h2>
+
+                    <h2>
+                        We'd love to welcome you.
+                    </h2>
+
 
                     <p>
-                        Come and enjoy breakfast, brunch, lunch or coffee
-                        at Hylton Café.
+                        Come and enjoy breakfast, brunch,
+                        lunch or coffee at Hylton Café.
                     </p>
 
                 </div>
+
 
 
                 <div class="contact-details">
 
-                    <div>
-                        <h3>Address</h3>
-                        <p>2 Hylton St<br>Birmingham B18 6HN<br>United Kingdom</p>
-                    </div>
 
                     <div>
-                        <h3>Phone</h3>
-                        <a href="tel:01215547005">0121 554 7005</a>
+
+                        <h3>
+                            Address
+                        </h3>
+
+
+                        <p>
+                            2 Hylton St<br>
+                            Birmingham B18 6HN<br>
+                            United Kingdom
+                        </p>
+
                     </div>
 
+
+
                     <div>
-                        <h3>Email</h3>
+
+                        <h3>
+                            Phone
+                        </h3>
+
+
+                        <a href="tel:01215547005">
+                            0121 554 7005
+                        </a>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <h3>
+                            Email
+                        </h3>
+
+
                         <a href="mailto:thehyltoncafe@outlook.com">
                             thehyltoncafe@outlook.com
                         </a>
+
                     </div>
+
+                </div>
+
+
+
+                <div class="contact-image">
+
+                    <img
+                        src="Screenshot_20260807-170648.jpg"
+                        alt="Hylton Café exterior and sign"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+
+                <!-- GOOGLE MAP -->
+
+                <div class="map-wrapper">
+
+                    <iframe
+                        src="https://www.google.com/maps?q=2%20Hylton%20Street,%20Birmingham%20B18%206HN,%20UK&output=embed"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Hylton Café location on Google Maps">
+                    </iframe>
 
                 </div>
 
@@ -294,18 +695,33 @@
     </main>
 
 
-    <!-- Footer -->
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
     <footer>
 
         <div class="container footer-container">
 
+
             <div>
-                <h3>Hylton Café</h3>
-                <p>Breakfast · Brunch · Lunch · Coffee</p>
+
+                <h3>
+                    Hylton Café
+                </h3>
+
+
+                <p>
+                    Breakfast · Brunch · Lunch · Coffee
+                </p>
+
             </div>
 
+
             <p>
-                © 2026 Hylton Café. Website concept by [Your Name].
+                © 2026 Hylton Café.
+                All rights reserved.
             </p>
 
         </div>
@@ -313,7 +729,11 @@
     </footer>
 
 
+
+    <!-- JAVASCRIPT -->
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
