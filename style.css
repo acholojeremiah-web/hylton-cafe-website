@@ -5,171 +5,357 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
 
-:root {
-    --dark: #1c1a17;
-    --cream: #f7f2e9;
-    --white: #ffffff;
-    --gold: #c58b45;
-    --brown: #704c32;
-    --light-brown: #a77b56;
-    --text: #3f3933;
-    --border: #e5ddd0;
+:root{
+    --dark:#1c1a17;
+    --cream:#f7f2e9;
+    --white:#ffffff;
+    --gold:#c58b45;
+    --brown:#704c32;
+    --light-brown:#a77b56;
+    --text:#3f3933;
+    --border:#e5ddd0;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-    font-family: 'DM Sans', sans-serif;
-    color: var(--text);
-    background: var(--white);
-    line-height: 1.6;
+body{
+    font-family:'DM Sans',sans-serif;
+    color:var(--text);
+    background:var(--white);
+    line-height:1.7;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.container{
+    width:min(1120px,90%);
+    margin:auto;
 }
 
-img {
-    max-width: 100%;
-    display: block;
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
-.container {
-    width: min(1120px, 90%);
-    margin: 0 auto;
+img{
+    max-width:100%;
+    display:block;
 }
 
-/* ================================
+/* =====================
    NAVIGATION
-================================ */
+===================== */
 
-.navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    padding: 24px 0;
-    color: var(--white);
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:100;
+    padding:25px 0;
+    color:#fff;
 }
 
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    font-weight: 700;
+.logo{
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    font-weight:700;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    gap: 28px;
+nav{
+    display:flex;
+    gap:30px;
 }
 
-nav a {
-    font-size: 14px;
-    font-weight: 500;
-    transition: 0.3s;
+nav a{
+    transition:.3s;
 }
 
-nav a:hover {
-    color: var(--gold);
+nav a:hover{
+    color:var(--gold);
 }
 
-.nav-button {
-    border: 1px solid rgba(255,255,255,0.7);
-    padding: 11px 20px;
-    border-radius: 4px;
-    font-size: 14px;
-    transition: 0.3s;
+.nav-button{
+    border:1px solid rgba(255,255,255,.7);
+    padding:12px 22px;
+    border-radius:4px;
+    transition:.3s;
 }
 
-.nav-button:hover {
-    background: var(--white);
-    color: var(--dark);
+.nav-button:hover{
+    background:#fff;
+    color:var(--dark);
 }
 
-/* ================================
+/* =====================
    HERO
-================================ */
+===================== */
 
-.hero {
-    min-height: 720px;
-    position: relative;
-    display: flex;
-    align-items: center;
+.hero{
+    min-height:720px;
+    display:flex;
+    align-items:center;
+    position:relative;
     background:
-        linear-gradient(rgba(20,16,12,0.60), rgba(20,16,12,0.70)),
-        url('https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1800&q=85')
-        center/cover no-repeat;
+    linear-gradient(rgba(20,16,12,.55),rgba(20,16,12,.70)),
+    url("cafe-interior.jpg") center/cover no-repeat;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    color: var(--white);
-    padding-top: 80px;
-    max-width: 760px;
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:#fff;
+    max-width:720px;
+    padding-top:80px;
 }
 
 .hero-small-text,
-.section-label {
-    color: var(--gold);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    margin-bottom: 16px;
+.section-label{
+    color:var(--gold);
+    letter-spacing:3px;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:18px;
 }
 
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(48px, 7vw, 82px);
-    line-height: 1.05;
-    margin-bottom: 25px;
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(50px,7vw,82px);
+    line-height:1.05;
+    margin-bottom:25px;
 }
 
-.hero-description {
-    max-width: 550px;
-    font-size: 18px;
-    color: #f2eee8;
-    margin-bottom: 35px;
+.hero-description{
+    font-size:18px;
+    max-width:550px;
+    margin-bottom:35px;
 }
 
-.hero-buttons {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
 }
 
 .primary-button,
-.secondary-button {
-    display: inline-block;
-    padding: 14px 24px;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 600;
-    transition: 0.3s;
+.secondary-button{
+    padding:14px 24px;
+    border-radius:4px;
+    display:inline-block;
+    transition:.3s;
+    font-weight:600;
 }
 
-.primary-button {
-    background: var(--gold);
-    color: var(--white);
+.primary-button{
+    background:var(--gold);
+    color:#fff;
 }
 
-.primary-button:hover {
-    background:
+.primary-button:hover{
+    background:var(--brown);
+}
+
+.secondary-button{
+    border:1px solid rgba(255,255,255,.7);
+    color:#fff;
+}
+
+.secondary-button:hover{
+    background:#fff;
+    color:var(--dark);
+}
+
+/* =====================
+   INTRO
+=====================
+/* =====================
+   ABOUT
+===================== */
+
+.about-section{
+    padding:100px 0;
+    background:var(--cream);
+}
+
+.about-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:50px;
+    align-items:center;
+}
+
+.about-image{
+    min-height:450px;
+    border-radius:10px;
+    background:url("cafe-interior.jpg") center/cover no-repeat;
+}
+
+.about-content h2{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    margin:15px 0 25px;
+}
+
+.about-content p{
+    margin-bottom:18px;
+}
+
+/* =====================
+   GALLERY
+===================== */
+
+.gallery-section{
+    padding:100px 0;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    height:240px;
+    border-radius:10px;
+    background-size:cover;
+    background-position:center;
+    transition:.3s;
+}
+
+.gallery-item:hover{
+    transform:scale(1.03);
+}
+
+.gallery-one{
+    background-image:url("cafe-counter.jpg");
+}
+
+.gallery-two{
+    background-image:url("full-english-breakfast-2.jpg");
+}
+
+.gallery-three{
+    background-image:url("coffee-sandwich.jpg");
+}
+
+.gallery-four{
+    background-image:url("latte-glass.jpg");
+}
+
+.gallery-five{
+    background-image:url("cafe-exterior.jpg");
+}
+
+.gallery-six{
+    background-image:url("cafe-seating-area.jpg");
+}
+
+/* =====================
+   CONTACT
+===================== */
+
+.contact-section{
+    padding:100px 0;
+    background:var(--cream);
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:50px;
+}
+
+.contact-content h2{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    margin:15px 0 25px;
+}
+
+.contact-details div{
+    margin-bottom:25px;
+}
+
+.contact-details h3{
+    margin-bottom:8px;
+    color:var(--brown);
+}
+
+.contact-details a{
+    color:var(--gold);
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer{
+    background:var(--dark);
+    color:#fff;
+    padding:40px 0;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media(max-width:900px){
+
+    nav{
+        display:none;
+    }
+
+    .nav-container{
+        justify-content:center;
+    }
+
+    .hero{
+        min-height:600px;
+        text-align:center;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .intro-container,
+    .about-container,
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:52px;
+    }
+
+    .section-heading h2,
+    .intro h2,
+    .about-content h2,
+    .contact-content h2{
+        font-size:34px;
+    }
+
+    .footer-container{
+        flex-direction:column;
+        text-align:center;
+    }
+}
