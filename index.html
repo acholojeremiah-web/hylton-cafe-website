@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
 
@@ -13,727 +12,1127 @@
 
     <meta
         name="description"
-        content="Hylton Café in Birmingham. Enjoy freshly prepared breakfast, brunch, lunch and great coffee at 2 Hylton Street."
+        content="Hylton Café in Birmingham. Fresh breakfast, brunch, lunch, coffee and sandwiches at 2 Hylton Street."
     >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
 
-    <!-- =====================================================
-         NAVIGATION
-    ====================================================== -->
+<header class="navbar" id="navbar">
+    <div class="container nav-container">
 
-    <header class="navbar">
+        <a href="#home" class="logo">
+            Hylton Café
+        </a>
 
-        <div class="container nav-container">
+        <nav
+            class="main-nav"
+            id="mainNav"
+            aria-label="Main navigation"
+        >
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-            <a href="#home" class="logo">
-                Hylton Café
-            </a>
+        <a href="#menu" class="nav-button">
+            View Menu
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mainNav"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
 
 
-            <nav
-                class="main-nav"
-                id="mainNav"
-                aria-label="Main navigation"
-            >
+<main>
 
-                <a href="#home">Home</a>
+    <!-- HERO -->
+    <section id="home" class="hero">
 
-                <a href="#menu">Menu</a>
+        <div class="hero-overlay"></div>
 
-                <a href="#about">About</a>
+        <div class="container hero-content">
 
-                <a href="#gallery">Gallery</a>
+            <p class="hero-small-text">
+                WELCOME TO HYLTON CAFÉ
+            </p>
 
-                <a href="#contact">Contact</a>
+            <h1>
+                Fresh Food.<br>
+                Great Coffee.<br>
+                Good Times.
+            </h1>
 
-            </nav>
+            <p class="hero-description">
+                Breakfast, brunch and lunch served in a
+                warm and welcoming café in the heart of Birmingham.
+            </p>
 
+            <div class="hero-buttons">
 
-            <a href="#menu" class="nav-button">
-                View Menu
-            </a>
+                <a
+                    href="#menu"
+                    class="primary-button"
+                >
+                    Explore Our Menu
+                </a>
 
+                <a
+                    href="#contact"
+                    class="secondary-button"
+                >
+                    Find Us
+                </a>
 
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="mainNav"
-            >
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </button>
+            </div>
 
         </div>
 
-    </header>
+    </section>
 
 
+    <!-- INTRO -->
+    <section class="intro">
 
-    <!-- =====================================================
-         MAIN CONTENT
-    ====================================================== -->
+        <div class="container intro-container">
 
-    <main>
-
-
-        <!-- =================================================
-             HERO
-        ================================================== -->
-
-        <section id="home" class="hero">
-
-            <div class="hero-overlay"></div>
-
-
-            <div class="container hero-content">
-
-                <p class="hero-small-text">
-                    WELCOME TO HYLTON CAFÉ
+            <div>
+                <p class="section-label">
+                    HYLTON CAFÉ
                 </p>
 
+                <h2>
+                    A place for good food
+                    and good company.
+                </h2>
+            </div>
 
-                <h1>
-                    Fresh Food.<br>
-                    Great Coffee.<br>
-                    Good Times.
-                </h1>
+            <div>
 
-
-                <p class="hero-description">
-                    Delicious breakfast, brunch and lunch served
-                    in the heart of Birmingham.
+                <p>
+                    From a hearty breakfast and relaxed brunch
+                    to lunch, sandwiches and freshly prepared
+                    coffee, Hylton Café is a welcoming place
+                    to enjoy good food in Birmingham.
                 </p>
 
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="#menu"
-                        class="primary-button"
-                    >
-                        Explore Our Menu
-                    </a>
-
-
-                    <a
-                        href="#contact"
-                        class="secondary-button"
-                    >
-                        Find Us
-                    </a>
-
-                </div>
+                <a
+                    href="#about"
+                    class="text-link"
+                >
+                    Discover Our Story →
+                </a>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
+    <!-- MENU -->
+    <section
+        id="menu"
+        class="menu-section"
+    >
 
-        <!-- =================================================
-             INTRODUCTION
-        ================================================== -->
+        <div class="container">
 
-        <section class="intro">
+            <div class="section-heading">
 
-            <div class="container intro-container">
+                <p class="section-label">
+                    OUR MENU
+                </p>
 
-                <div>
+                <h2>
+                    Café favourites
+                </h2>
 
-                    <p class="section-label">
-                        HYLTON CAFÉ
-                    </p>
-
-
-                    <h2>
-                        A place for good food
-                        and good company.
-                    </h2>
-
-                </div>
-
-
-                <div>
-
-                    <p>
-                        From a hearty breakfast to a relaxed
-                        lunch and a freshly brewed coffee,
-                        Hylton Café is a welcoming place to
-                        enjoy freshly prepared food in Birmingham.
-                    </p>
-
-
-                    <a
-                        href="#about"
-                        class="text-link"
-                    >
-                        Discover Our Story →
-                    </a>
-
-                </div>
+                <p>
+                    A selection of dishes from the Hylton Café menu,
+                    from classic breakfasts to relaxed lunch favourites.
+                </p>
 
             </div>
 
-        </section>
 
+            <div class="menu-grid">
 
+                <!-- 1 -->
+                <article class="menu-card">
 
-        <!-- =================================================
-             MENU
-        ================================================== -->
+                    <div class="menu-image">
+                        <img
+                            src="Screenshot_20260807-170319.jpg"
+                            alt="Full English breakfast at Hylton Café"
+                            loading="lazy"
+                        >
+                    </div>
 
-        <section
-            id="menu"
-            class="menu-section"
-        >
+                    <div class="menu-content">
 
-            <div class="container">
+                        <span class="menu-category">
+                            BREAKFAST
+                        </span>
 
-
-                <div class="section-heading">
-
-                    <p class="section-label">
-                        OUR MENU
-                    </p>
-
-
-                    <h2>
-                        Customer favourites
-                    </h2>
-
-
-                    <p>
-                        A selection of dishes perfect for
-                        breakfast, brunch and lunch.
-                    </p>
-
-                </div>
-
-
-
-                <div class="menu-grid">
-
-
-                    <!-- MENU ITEM 1 -->
-
-                    <article class="menu-card">
-
-                        <div class="menu-image">
-
-                            <img
-                                src="full-english-breakfast-2.jpg"
-                                alt="Full English breakfast at Hylton Café"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-
-                        <div class="menu-content">
-
-                            <span class="menu-category">
-                                BREAKFAST
-                            </span>
-
-
+                        <div class="menu-title-row">
                             <h3>
-                                Full English Breakfast
+                                Hylton Café Full English
                             </h3>
 
-
-                            <p>
-                                A hearty British classic prepared
-                                for a satisfying start to your day.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- MENU ITEM 2 -->
-
-                    <article class="menu-card">
-
-                        <div class="menu-image">
-
-                            <img
-                                src="coffee-sandwich.jpg"
-                                alt="Brunch dish served at Hylton Café"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-
-                        <div class="menu-content">
-
-                            <span class="menu-category">
-                                BRUNCH
+                            <span class="price">
+                                £10.95
                             </span>
+                        </div>
+
+                        <p>
+                            Sausages, bacon, baked beans, fried egg,
+                            mushrooms, tomatoes, black pudding,
+                            hash brown and toast.
+                        </p>
+
+                    </div>
+
+                </article>
 
 
+                <!-- 2 -->
+                <article class="menu-card">
+
+                    <div class="menu-image">
+                        <img
+                            src="Screenshot_20260807-170305.jpg"
+                            alt="Eggs Benedict served at Hylton Café"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="menu-content">
+
+                        <span class="menu-category">
+                            BRUNCH
+                        </span>
+
+                        <div class="menu-title-row">
                             <h3>
                                 Eggs Benedict
                             </h3>
 
-
-                            <p>
-                                A brunch favourite with perfectly
-                                prepared eggs and delicious
-                                accompaniments.
-                            </p>
-
+                            <span class="price">
+                                £9.00
+                            </span>
                         </div>
 
-                    </article>
+                        <p>
+                            Soft poached egg on a toasted muffin
+                            with bacon, hollandaise and chives.
+                        </p>
+
+                    </div>
+
+                </article>
 
 
+                <!-- 3 -->
+                <article class="menu-card">
 
-                    <!-- MENU ITEM 3 -->
+                    <div class="menu-image">
+                        <img
+                            src="Screenshot_20260807-170402_1.jpg"
+                            alt="Smoked salmon and scrambled eggs on toast"
+                            loading="lazy"
+                        >
+                    </div>
 
-                    <article class="menu-card">
+                    <div class="menu-content">
 
-                        <div class="menu-image">
+                        <span class="menu-category">
+                            CAFÉ FAVOURITE
+                        </span>
 
-                            <img
-                                src="latte-glass.jpg"
-                                alt="Coffee and brunch at Hylton Café"
-                                loading="lazy"
-                            >
+                        <div class="menu-title-row">
+                            <h3>
+                                Smoked Salmon 'n' Scrambled Eggs
+                            </h3>
 
+                            <span class="price">
+                                £10.00
+                            </span>
                         </div>
 
+                        <p>
+                            Smoked salmon and creamy scrambled eggs
+                            served on granary toast with chives.
+                        </p>
 
-                        <div class="menu-content">
+                    </div>
 
-                            <span class="menu-category">
+                </article>
+
+
+                <!-- 4 -->
+                <article class="menu-card">
+
+                    <div class="menu-image">
+                        <img
+                            src="Screenshot_20260807-170548.jpg"
+                            alt="Burger served with curly fries and salad"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="menu-content">
+
+                        <span class="menu-category">
+                            LUNCH
+                        </span>
+
+                        <div class="menu-title-row">
+                            <h3>
+                                Burger & Fries
+                            </h3>
+
+                            <span class="price">
                                 CAFÉ FAVOURITE
                             </span>
+                        </div>
+
+                        <p>
+                            A satisfying lunch choice served with
+                            crispy curly fries and a fresh side salad.
+                        </p>
+
+                    </div>
+
+                </article>
 
 
+                <!-- 5 -->
+                <article class="menu-card">
+
+                    <div class="menu-image">
+                        <img
+                            src="Screenshot_20260807-170726.jpg"
+                            alt="Hot sandwich served at Hylton Café"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="menu-content">
+
+                        <span class="menu-category">
+                            SANDWICHES
+                        </span>
+
+                        <div class="menu-title-row">
                             <h3>
-                                Salmon & Scrambled Eggs
+                                Hot Sandwiches
                             </h3>
 
-
-                            <p>
-                                A relaxed brunch combination made
-                                for slow and enjoyable mornings.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- MENU ITEM 4 -->
-
-                    <article class="menu-card">
-
-                        <div class="menu-image">
-
-                            <img
-                                src="cafe-counter.jpg"
-                                alt="Hylton Café counter"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-
-                        <div class="menu-content">
-
-                            <span class="menu-category">
-                                LUNCH
+                            <span class="price">
+                                FROM £4.00
                             </span>
-
-
-                            <h3>
-                                Burgers & Fries
-                            </h3>
-
-
-                            <p>
-                                A satisfying lunch option served
-                                with crispy, golden fries.
-                            </p>
-
                         </div>
 
-                    </article>
+                        <p>
+                            Choose your fillings, served in sliced
+                            white or seeded bread.
+                        </p>
 
-                </div>
+                    </div>
+
+                </article>
 
 
+                <!-- 6 -->
+                <article class="menu-card">
 
-                <div class="menu-button-container">
+                    <div class="menu-image">
+                        <img
+                            src="Screenshot_20260807-170558.jpg"
+                            alt="Cheese toastie served at Hylton Café"
+                            loading="lazy"
+                        >
+                    </div>
 
-                    <a
-                        href="#contact"
-                        class="primary-button"
-                    >
-                        Ask About Our Menu
-                    </a>
+                    <div class="menu-content">
 
-                </div>
+                        <span class="menu-category">
+                            LUNCH
+                        </span>
+
+                        <div class="menu-title-row">
+                            <h3>
+                                Toasties & Sandwiches
+                            </h3>
+
+                            <span class="price">
+                                FROM £6.00
+                            </span>
+                        </div>
+
+                        <p>
+                            Comforting toasted favourites and
+                            freshly prepared sandwiches.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 7 -->
+                <article class="menu-card">
+
+                    <div class="menu-image">
+                        <img
+                            src="Screenshot_20260807-170353.jpg"
+                            alt="Hot chocolate served at Hylton Café"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="menu-content">
+
+                        <span class="menu-category">
+                            COFFEE & DRINKS
+                        </span>
+
+                        <div class="menu-title-row">
+                            <h3>
+                                Something Warm
+                            </h3>
+
+                            <span class="price">
+                                CAFÉ FAVOURITE
+                            </span>
+                        </div>
+
+                        <p>
+                            Enjoy a freshly prepared hot drink
+                            alongside breakfast or lunch.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 8 -->
+                <article class="menu-card">
+
+                    <div class="menu-image">
+                        <img
+                            src="Screenshot_20260807-170527.jpg"
+                            alt="Coffee and sandwich at Hylton Café"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="menu-content">
+
+                        <span class="menu-category">
+                            COFFEE & LUNCH
+                        </span>
+
+                        <div class="menu-title-row">
+                            <h3>
+                                Coffee & a Bite
+                            </h3>
+
+                            <span class="price">
+                                CAFÉ FAVOURITE
+                            </span>
+                        </div>
+
+                        <p>
+                            A relaxed coffee stop with something
+                            delicious to eat.
+                        </p>
+
+                    </div>
+
+                </article>
 
             </div>
 
-        </section>
 
+            <div class="menu-note">
 
+                <div>
+                    <span>
+                        MENU INFORMATION
+                    </span>
 
-        <!-- =================================================
-             ABOUT
-        ================================================== -->
-
-        <section
-            id="about"
-            class="about-section"
-        >
-
-            <div class="container about-container">
-
-
-                <div class="about-image">
-
-                    <img
-                        src="Screenshot_20260807-170252.jpg"
-                        alt="Inside Hylton Café with comfortable seating"
-                        loading="lazy"
-                    >
-
+                    <strong>
+                        Prices and availability may vary.
+                    </strong>
                 </div>
 
-
-
-                <div class="about-content">
-
-                    <p class="section-label">
-                        ABOUT US
-                    </p>
-
-
-                    <h2>
-                        Good food,
-                        freshly prepared.
-                    </h2>
-
-
-                    <p>
-                        Hylton Café is a Birmingham café serving
-                        breakfast, brunch, lunch and coffee in a
-                        relaxed and welcoming environment.
-                    </p>
-
-
-                    <p>
-                        Whether you're joining us for breakfast,
-                        meeting a friend for coffee or stopping
-                        by for lunch, we look forward to welcoming you.
-                    </p>
-
-
-                    <a
-                        href="#contact"
-                        class="text-link"
-                    >
-                        Visit Hylton Café →
-                    </a>
-
-                </div>
+                <a
+                    href="#gallery"
+                    class="primary-button"
+                >
+                    See More Café Photos
+                </a>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
+    <!-- ABOUT -->
+    <section
+        id="about"
+        class="about-section"
+    >
 
-        <!-- =================================================
-             GALLERY
-        ================================================== -->
+        <div class="container about-container">
 
-        <section
-            id="gallery"
-            class="gallery-section"
-        >
+            <div class="about-image">
 
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <p class="section-label">
-                        GALLERY
-                    </p>
-
-
-                    <h2>
-                        A taste of Hylton Café
-                    </h2>
-
-
-                    <p>
-                        Step inside, take a seat and enjoy
-                        the Hylton Café experience.
-                    </p>
-
-                </div>
-
-
-
-                <div class="gallery-grid">
-
-
-                    <div class="gallery-item gallery-large">
-
-                        <img
-                            src="Screenshot_20260807-170630.jpg"
-                            alt="Warm interior of Hylton Café"
-                            loading="lazy"
-                        >
-
-                    </div>
-
-
-
-                    <div class="gallery-item">
-
-                        <img
-                            src="cafe-counter.jpg"
-                            alt="Hylton Café counter"
-                            loading="lazy"
-                        >
-
-                    </div>
-
-
-
-                    <div class="gallery-item">
-
-                        <img
-                            src="full-english-breakfast-2.jpg"
-                            alt="Breakfast served at Hylton Café"
-                            loading="lazy"
-                        >
-
-                    </div>
-
-
-
-                    <div class="gallery-item">
-
-                        <img
-                            src="coffee-sandwich.jpg"
-                            alt="Food served at Hylton Café"
-                            loading="lazy"
-                        >
-
-                    </div>
-
-
-
-                    <div class="gallery-item">
-
-                        <img
-                            src="latte-glass.jpg"
-                            alt="Coffee served at Hylton Café"
-                            loading="lazy"
-                        >
-
-                    </div>
-
-
-
-                    <div class="gallery-item">
-
-                        <img
-                            src="Screenshot_20260807-170252.jpg"
-                            alt="Seating area inside Hylton Café"
-                            loading="lazy"
-                        >
-
-                    </div>
-
-                </div>
+                <img
+                    src="Screenshot_20260807-170252.jpg"
+                    alt="Inside Hylton Café showing the seating area and counter"
+                    loading="lazy"
+                >
 
             </div>
 
-        </section>
 
+            <div class="about-content">
 
+                <p class="section-label">
+                    ABOUT HYLTON CAFÉ
+                </p>
 
-        <!-- =================================================
-             CONTACT
-        ================================================== -->
+                <h2>
+                    Good food,
+                    freshly prepared.
+                </h2>
 
-        <section
-            id="contact"
-            class="contact-section"
-        >
+                <p>
+                    Hylton Café is a welcoming Birmingham café
+                    serving breakfast, brunch, lunch, sandwiches
+                    and coffee.
+                </p>
 
-            <div class="container contact-container">
+                <p>
+                    Whether you're joining us for breakfast,
+                    meeting someone for coffee or stopping by
+                    for lunch, there's a relaxed seat waiting
+                    for you.
+                </p>
 
-
-                <div class="contact-content">
-
-                    <p class="section-label">
-                        COME VISIT US
-                    </p>
-
-
-                    <h2>
-                        We'd love to welcome you.
-                    </h2>
-
-
-                    <p>
-                        Come and enjoy breakfast, brunch,
-                        lunch or coffee at Hylton Café.
-                    </p>
-
-                </div>
-
-
-
-                <div class="contact-details">
-
+                <div class="about-highlights">
 
                     <div>
+                        <strong>
+                            Breakfast
+                        </strong>
+                        <span>
+                            Freshly prepared favourites
+                        </span>
+                    </div>
 
+                    <div>
+                        <strong>
+                            Brunch
+                        </strong>
+                        <span>
+                            Relaxed café classics
+                        </span>
+                    </div>
+
+                    <div>
+                        <strong>
+                            Lunch
+                        </strong>
+                        <span>
+                            Sandwiches & hearty choices
+                        </span>
+                    </div>
+
+                </div>
+
+                <a
+                    href="#contact"
+                    class="text-link"
+                >
+                    Visit Hylton Café →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+    <section
+        id="gallery"
+        class="gallery-section"
+    >
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    GALLERY
+                </p>
+
+                <h2>
+                    A taste of Hylton Café
+                </h2>
+
+                <p>
+                    Step inside, take a seat and see some of
+                    the food, coffee, people and surroundings
+                    that make Hylton Café feel like home.
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item gallery-feature">
+                    <img
+                        src="Screenshot_20260807-170630.jpg"
+                        alt="Hylton Café interior with flowers and large windows"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170252.jpg"
+                        alt="Hylton Café interior and seating"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170616.jpg"
+                        alt="Hylton Café counter and display cabinet"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170809.jpg"
+                        alt="Hylton Café counter and coffee area"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170659.jpg"
+                        alt="Table and chairs inside Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171224.jpg"
+                        alt="Seating area inside Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170757.jpg"
+                        alt="Wall artwork inside Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170955.jpg"
+                        alt="Chalkboard artwork inside Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170305.jpg"
+                        alt="Eggs Benedict at Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170319.jpg"
+                        alt="Full English breakfast at Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170339.jpg"
+                        alt="Full breakfast with eggs, beans and sausages"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170738.jpg"
+                        alt="Full breakfast plate at Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171109.jpg"
+                        alt="Full breakfast with bacon, eggs and beans"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171136.jpg"
+                        alt="Breakfast plate at Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171202.jpg"
+                        alt="Full breakfast with sausages and beans"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171355.jpg"
+                        alt="Breakfast with coffee at Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171459.jpg"
+                        alt="Breakfast and toast at Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171551.jpg"
+                        alt="Breakfast plate with eggs, beans and mushrooms"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170402_1.jpg"
+                        alt="Smoked salmon and scrambled eggs on toast"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170500.jpg"
+                        alt="Scrambled eggs and smoked salmon on toast"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171122.jpg"
+                        alt="Smoked salmon, scrambled eggs and toast"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171301.jpg"
+                        alt="Poached eggs, avocado and halloumi on toast"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171342.jpg"
+                        alt="Eggs Benedict with bacon and hollandaise"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170921.jpg"
+                        alt="Eggs Benedict and coffee"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170714.jpg"
+                        alt="Loaded baked potato with salad"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170548.jpg"
+                        alt="Burger with curly fries and salad"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170726.jpg"
+                        alt="Hot sandwich"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170558.jpg"
+                        alt="Cheese toastie"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170513.jpg"
+                        alt="Toast with jam"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170527.jpg"
+                        alt="Coffee and sandwich"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170353.jpg"
+                        alt="Hot chocolate at Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170933.jpg"
+                        alt="Coffee at Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171011.jpg"
+                        alt="Coffee and milk on a café table"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171314.jpg"
+                        alt="Coffee cup at Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170945.jpg"
+                        alt="Coffee and pastry at a Hylton Café table"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171100.jpg"
+                        alt="Hylton Café breakfast and sandwich menu"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170329.jpg"
+                        alt="Hylton Café building exterior"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-170648.jpg"
+                        alt="Hylton Café exterior hanging sign"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171214.jpg"
+                        alt="Hylton Café outdoor seating"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171240.jpg"
+                        alt="Hylton Café exterior and street"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171324.jpg"
+                        alt="Street near Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="Screenshot_20260807-171413.jpg"
+                        alt="Street view near Hylton Café"
+                        loading="lazy"
+                    >
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section
+        id="contact"
+        class="contact-section"
+    >
+
+        <div class="container contact-container">
+
+            <div class="contact-content">
+
+                <p class="section-label">
+                    COME VISIT US
+                </p>
+
+                <h2>
+                    We'd love to
+                    welcome you.
+                </h2>
+
+                <p>
+                    Come and enjoy breakfast, brunch,
+                    lunch or coffee at Hylton Café.
+                </p>
+
+            </div>
+
+
+            <div class="contact-details">
+
+                <div class="contact-detail">
+
+                    <span class="detail-number">
+                        01
+                    </span>
+
+                    <div>
                         <h3>
                             Address
                         </h3>
-
 
                         <p>
                             2 Hylton St<br>
                             Birmingham B18 6HN<br>
                             United Kingdom
                         </p>
-
                     </div>
 
+                </div>
 
+
+                <div class="contact-detail">
+
+                    <span class="detail-number">
+                        02
+                    </span>
 
                     <div>
-
                         <h3>
                             Phone
                         </h3>
 
-
                         <a href="tel:01215547005">
                             0121 554 7005
                         </a>
-
                     </div>
 
+                </div>
 
+
+                <div class="contact-detail">
+
+                    <span class="detail-number">
+                        03
+                    </span>
 
                     <div>
-
                         <h3>
                             Email
                         </h3>
 
-
                         <a href="mailto:thehyltoncafe@outlook.com">
                             thehyltoncafe@outlook.com
                         </a>
-
                     </div>
 
                 </div>
 
+            </div>
 
 
-                <div class="contact-image">
+            <div class="contact-image">
 
-                    <img
-                        src="Screenshot_20260807-170648.jpg"
-                        alt="Hylton Café exterior and sign"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-
-                <!-- GOOGLE MAP -->
-
-                <div class="map-wrapper">
-
-                    <iframe
-                        src="https://www.google.com/maps?q=2%20Hylton%20Street,%20Birmingham%20B18%206HN,%20UK&output=embed"
-                        loading="lazy"
-                        allowfullscreen
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Hylton Café location on Google Maps">
-                    </iframe>
-
-                </div>
+                <img
+                    src="Screenshot_20260807-170648.jpg"
+                    alt="Hylton Café exterior sign"
+                    loading="lazy"
+                >
 
             </div>
 
-        </section>
 
-    </main>
+            <div class="map-wrapper">
 
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
-
-    <footer>
-
-        <div class="container footer-container">
-
-
-            <div>
-
-                <h3>
-                    Hylton Café
-                </h3>
-
-
-                <p>
-                    Breakfast · Brunch · Lunch · Coffee
-                </p>
+                <iframe
+                    src="https://www.google.com/maps?q=2%20Hylton%20Street,%20Birmingham%20B18%206HN,%20UK&output=embed"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Hylton Café location on Google Maps"
+                ></iframe>
 
             </div>
 
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="container footer-container">
+
+        <div>
+
+            <h3>
+                Hylton Café
+            </h3>
 
             <p>
-                © 2026 Hylton Café.
-                All rights reserved.
+                Breakfast · Brunch · Lunch · Coffee
             </p>
 
         </div>
 
-    </footer>
+
+        <div class="footer-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#menu">
+                Menu
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#gallery">
+                Gallery
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
 
 
+        <p class="copyright">
+            © 2026 Hylton Café.
+            All rights reserved.
+        </p>
 
-    <!-- JAVASCRIPT -->
+    </div>
 
-    <script src="script.js"></script>
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
