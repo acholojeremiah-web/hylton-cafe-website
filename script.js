@@ -193,18 +193,18 @@ document.addEventListener(
         // =================================================
 
         const revealElements =
-            document.querySelectorAll(
-                ".intro, " +
-                ".menu-card, " +
-                ".about-container, " +
-                ".gallery-item, " +
-                ".contact-content, " +
-                ".contact-details, " +
-                ".contact-image, " +
-                ".map-wrapper"
-            );
-
-
+    document.querySelectorAll(
+        ".intro, " +
+        ".menu-category-grid, " +
+        ".category-card, " +
+        ".menu-card, " +
+        ".about-container, " +
+        ".gallery-item, " +
+        ".contact-content, " +
+        ".contact-details, " +
+        ".contact-image, " +
+        ".map-wrapper"
+    );
         revealElements.forEach(
             function (element) {
 
