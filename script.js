@@ -352,3 +352,323 @@ document.addEventListener(
 
     }
 );
+/* =========================================================
+   HYLTON CAFÉ — GALLERY FILTER + LIGHTBOX
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const galleryItems = Array.from(
+        document.querySelectorAll("[data-gallery]")
+    );
+
+    const filters = document.querySelectorAll(".gallery-filter");
+
+    const lightbox =
+        document.getElementById("galleryLightbox");
+
+    const lightboxImage =
+        document.getElementById("lightboxImage");
+
+    const lightboxClose =
+        document.getElementById("lightboxClose");
+
+    const lightboxPrev =
+        document.getElementById("lightboxPrev");
+
+    const lightboxNext =
+        document.getElementById("lightboxNext");
+
+    const lightboxCounter =
+        document.getElementById("lightboxCounter");
+
+    let visibleItems = galleryItems.slice();
+
+    let currentIndex = 0;
+
+
+    /* =========================
+       FILTERS
+    ========================= */
+
+    filters.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            filters.forEach(function (item) {
+                item.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            const filter =
+                button.getAttribute("data-filter");
+
+            galleryItems.forEach(function (item) {
+
+                const category =
+                    item.getAttribute("data-category");
+
+                if (
+                    filter === "all" ||
+                    category === filter
+                ) {
+                    item.classList.remove("is-hidden");
+                } else {
+                    item.classList.add("is-hidden");
+                }
+
+            });
+
+            visibleItems =
+                galleryItems.filter(function (item) {
+
+                    return !item.classList.contains(
+                        "is-hidden"
+                    );
+
+                });
+
+        });
+
+    });
+
+
+    /* =========================
+       OPEN LIGHTBOX
+    ========================= */
+
+    galleryItems.forEach(function (item) {
+
+        item.addEventListener("click", function () {
+
+            visibleItems =
+                galleryItems.filter(function (galleryItem) {
+
+                    return !galleryItem.classList.contains(
+                        "is-hidden"
+                    );
+
+                });
+
+            currentIndex =
+                visibleItems.indexOf(item);
+
+            openLightbox();
+
+        });
+
+    });
+
+
+    function openLightbox() {
+
+        if (
+            !visibleItems.length ||
+            !visibleItems[currentIndex]
+        ) {
+            return;
+        }
+
+        const image =
+            visibleItems[currentIndex]
+                .querySelector("img");
+
+        if (!image) {
+            return;
+        }
+
+        lightboxImage.src =
+            image.currentSrc ||
+            image.src;
+
+        lightboxImage.alt =
+            image.alt || "Hylton Café";
+
+        lightboxCounter.textContent =
+            (currentIndex + 1) +
+            " / " +
+            visibleItems.length;
+
+        lightbox.classList.add("open");
+
+        lightbox.setAttribute(
+            "aria-hidden",
+            "false"
+        );
+
+        document.body.style.overflow =
+            "hidden";
+
+    }
+
+
+    /* =========================
+       CLOSE
+    ========================= */
+
+    function closeLightbox() {
+
+        lightbox.classList.remove("open");
+
+        lightbox.setAttribute(
+            "aria-hidden",
+            "true"
+        );
+
+        lightboxImage.src = "";
+
+        document.body.style.overflow =
+            "";
+
+    }
+
+
+    lightboxClose.addEventListener(
+        "click",
+        closeLightbox
+    );
+
+
+    lightbox.addEventListener(
+        "click",
+        function (event) {
+
+            if (
+                event.target === lightbox
+            ) {
+                closeLightbox();
+            }
+
+        }
+    );
+
+
+    /* =========================
+       NEXT / PREVIOUS
+    ========================= */
+
+    function showNext() {
+
+        if (!visibleItems.length) {
+            return;
+        }
+
+        currentIndex =
+            (currentIndex + 1) %
+            visibleItems.length;
+
+        openLightbox();
+
+    }
+
+
+    function showPrevious() {
+
+        if (!visibleItems.length) {
+            return;
+        }
+
+        currentIndex =
+            (
+                currentIndex -
+                1 +
+                visibleItems.length
+            ) %
+            visibleItems.length;
+
+        openLightbox();
+
+    }
+
+
+    lightboxNext.addEventListener(
+        "click",
+        showNext
+    );
+
+
+    lightboxPrev.addEventListener(
+        "click",
+        showPrevious
+    );
+
+
+    /* =========================
+       KEYBOARD
+    ========================= */
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                !lightbox.classList.contains(
+                    "open"
+                )
+            ) {
+                return;
+            }
+
+            if (event.key === "Escape") {
+                closeLightbox();
+            }
+
+            if (event.key === "ArrowRight") {
+                showNext();
+            }
+
+            if (event.key === "ArrowLeft") {
+                showPrevious();
+            }
+
+        }
+    );
+
+
+    /* =========================
+       MOBILE SWIPE
+    ========================= */
+
+    let touchStartX = 0;
+
+    let touchEndX = 0;
+
+
+    lightbox.addEventListener(
+        "touchstart",
+        function (event) {
+
+            touchStartX =
+                event.changedTouches[0].screenX;
+
+        },
+        { passive: true }
+    );
+
+
+    lightbox.addEventListener(
+        "touchend",
+        function (event) {
+
+            touchEndX =
+                event.changedTouches[0].screenX;
+
+            const distance =
+                touchEndX - touchStartX;
+
+            if (Math.abs(distance) < 50) {
+                return;
+            }
+
+            if (distance < 0) {
+                showNext();
+            } else {
+                showPrevious();
+            }
+
+        },
+        { passive: true }
+    );
+
+});
