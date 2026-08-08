@@ -1152,3 +1152,354 @@ footer {
     }
 
 }
+/* =========================================================
+   HYLTON CAFÉ — PREMIUM GALLERY UPGRADE
+========================================================= */
+
+.gallery-section {
+    position: relative;
+    padding: 120px 0;
+    background: #f7f2e9;
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: -25px auto 45px;
+}
+
+.gallery-filter {
+    border: 1px solid #ded4c5;
+    background: #fff;
+    color: #5c5147;
+    padding: 10px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.gallery-filter:hover,
+.gallery-filter.active {
+    background: #704c32;
+    color: #fff;
+    border-color: #704c32;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 230px;
+    grid-auto-flow: dense;
+    gap: 14px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    min-height: 230px;
+    border-radius: 14px;
+    background: #e8dfd2;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(28, 26, 23, .06);
+    transition:
+        opacity .35s ease,
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(28, 26, 23, .12);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .65s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+.gallery-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,.35),
+        transparent 45%
+    );
+    opacity: 0;
+    transition: opacity .3s ease;
+    pointer-events: none;
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
+}
+
+.gallery-item.gallery-large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery-item.gallery-wide {
+    grid-column: span 2;
+}
+
+.gallery-item.gallery-tall {
+    grid-row: span 2;
+}
+
+.gallery-item.is-hidden {
+    display: none;
+}
+
+
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+.gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background: rgba(15, 13, 11, .94);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease;
+}
+
+.gallery-lightbox.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-content {
+    position: relative;
+
+    width: min(1100px, 94vw);
+    height: min(82vh, 780px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.45);
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,.3);
+    background: rgba(0,0,0,.45);
+    color: #fff;
+
+    cursor: pointer;
+
+    transition:
+        background .25s ease,
+        transform .25s ease;
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: rgba(255,255,255,.15);
+}
+
+.lightbox-close {
+    top: 20px;
+    right: 20px;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    font-size: 26px;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    top: 50%;
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+
+    transform: translateY(-50%);
+}
+
+.lightbox-prev {
+    left: -70px;
+}
+
+.lightbox-next {
+    right: -70px;
+}
+
+.lightbox-counter {
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+
+    transform: translateX(-50%);
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   GALLERY MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 210px;
+    }
+
+    .gallery-item {
+        min-height: 210px;
+    }
+
+    .lightbox-prev {
+        left: 10px;
+    }
+
+    .lightbox-next {
+        right: 10px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .gallery-section {
+        padding: 85px 0;
+    }
+
+    .gallery-controls {
+        margin-top: -15px;
+        gap: 7px;
+    }
+
+    .gallery-filter {
+        padding: 9px 13px;
+        font-size: 12px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 190px;
+        gap: 9px;
+    }
+
+    .gallery-item {
+        min-height: 190px;
+        border-radius: 10px;
+    }
+
+    .gallery-item.gallery-large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .gallery-item.gallery-wide {
+        grid-column: span 2;
+    }
+
+    .gallery-item.gallery-tall {
+        grid-row: span 2;
+    }
+
+    .gallery-lightbox {
+        padding: 15px;
+    }
+
+    .lightbox-content {
+        width: 100%;
+        height: 75vh;
+    }
+
+    .lightbox-close {
+        top: -5px;
+        right: 0;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        top: auto;
+        bottom: -65px;
+
+        width: 45px;
+        height: 45px;
+    }
+
+    .lightbox-prev {
+        left: 15px;
+    }
+
+    .lightbox-next {
+        right: 15px;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 165px;
+    }
+
+    .gallery-item {
+        min-height: 165px;
+    }
+
+}
